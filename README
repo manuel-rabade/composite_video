@@ -1,0 +1,41 @@
+* Composite video and Arduino
+
+  [ TODO: English version. ]
+
+------------------------------------------------------------------------
+
+* Vídeo compuesto y Arduino
+
+  Ejemplos para generar vídeo compuesto (NTSC, blanco y negro) y audio
+  por software en un Arduino [1] utilizando la biblioteca TVout [2].
+
+* Contenido
+
+  + bin - Scripts.
+  + img - Imágenes de ejemplo.
+  + lib - Biblioteca TVout versión R6 (Junio 2010).
+  + sch - Esquema eléctrico.
+  + sketch - Skecthbooks para Arduino 0021.
+
+* TVdemo
+
+  Demuestra las funciones de la biblioteca TVout para generar vídeo
+  compuesto y audio.
+
+  El script bin/bmp2hex codifica mapas de bits tipo BMP en cabeceras
+  de C/C++ para la biblioteca TVout, por ejemplo:
+
+  laptop ~/git/tv/img $ ../bin/bmp2hex arduino.bmp > arduino.h
+
+* TVpong
+
+  El juego clásico de Pong derivado de un ejemplo distribuido con la
+  Video Game Shield [3]. Las modificaciones eliminan la dependencia con
+  la biblioteca VideoGameHelper y permiten utilizar botones pulsadores
+  en lugar de controles Wii Nunchuck.
+
+* Notas
+
+  1. http://arduino.cc
+  2. http://code.google.com/p/arduino-tvout/
+  3. http://wayneandlayne.com/projects/video-game-shield/
