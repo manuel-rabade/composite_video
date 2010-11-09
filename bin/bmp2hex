@@ -1,0 +1,41 @@
+#!/usr/bin/perl
+
+# Copyright 2009-2010 Manuel Rábade <manuel@rabade.net>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#  
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#  
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+use Image::BMP;
+
+die 'Missing file: ' .  $ARGV[0] unless (-f $ARGV[0]);
+
+my $img = new Image::BMP(file => $ARGV[0]);
+
+die 'Invalid bmp!' unless ($img);
+
+printf("// %ix%ix%i\n\n", $img->{Width}, 
+       $img->{Height}, $img->{ColorsUsed});
+
+for my $y (0 .. ($img->{Height} - 1)) {
+    my $byte = 0;
+    for my $x (0 .. ($img->{Width} - 1)) {
+        if ($img->xy($x,$y) > 0) {
+            $byte += 2**(7-($x % 8));
+        }
+        if (($x+1) % 8 == 0) {
+            printf('0x%.2x, ',$byte);
+            $byte = 0;
+        }
+    }
+    print "\n";
+}
