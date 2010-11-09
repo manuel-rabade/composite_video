@@ -19,8 +19,8 @@
 
 * TVdemo
 
-  Demuestra las funciones de la biblioteca TVout para generar vídeo
-  compuesto y audio.
+  Demuestra las funciones de la biblioteca TVout para generar vídeo y
+  audio.
 
   El script bin/bmp2hex codifica mapas de bits tipo BMP en cabeceras
   de C/C++ para la biblioteca TVout, por ejemplo:
