@@ -29,10 +29,10 @@
 
 * TVpong
 
-  El juego clásico de Pong derivado de un ejemplo distribuido con la
-  Video Game Shield [3]. Las modificaciones eliminan la dependencia con
-  la biblioteca VideoGameHelper y permiten utilizar botones pulsadores
-  en lugar de controles Wii Nunchuck.
+  El videojuego clásico de Pong derivado de un ejemplo distribuido con
+  la Video Game Shield [3]. Las modificaciones eliminan la dependencia
+  con la biblioteca VideoGameHelper y permiten utilizar botones
+  pulsadores en lugar de controles Wii Nunchuck.
 
 * Notas
 
