@@ -31,7 +31,7 @@ Shield](http://wayneandlayne.com/projects/video-game-shield/). Las
 modificaciones eliminan la dependencia con la biblioteca
 VideoGameHelper y permiten utilizar botones pulsadores en lugar de
 controles Wii Nunchuck. Puedes ver el [video de TVpong en
-funcionamiento](https://vimeo.com/16648861).
+funcionamiento](https://vimeo.com/16648980).
 
 Utilerías
 ---------
