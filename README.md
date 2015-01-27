@@ -51,6 +51,6 @@ Manuel Rábade <[manuel@rabade.net](mailto:manuel@rabade.net)>
 Licencia
 --------
 
-Esta obra está bajo una [licencia de Creative Commons
+Esta obra es publicada bajo una [licencia de Creative Commons
 Reconocimiento-CompartirIgual 4.0
 Internacional](http://creativecommons.org/licenses/by-sa/4.0/).
